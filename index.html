@@ -9,7 +9,6 @@
     <link href="css/dashlite.css" rel="stylesheet">
     <link href="css/style.css?v=20220626" rel="stylesheet">
     <link href="favicon.ico" rel="shortcut icon">
-    <link href="manifest.json" rel="manifest">
     <style>
         label {
             width: 100%;
@@ -34,24 +33,6 @@
             line-height: 2.5rem
         }
     </style>
-    <script type="text/javascript">
-        if (navigator.serviceWorker != null) {
-            navigator.serviceWorker.register('js/sw-pwa.js?20220628')
-                .then(function (registration) {
-                    console.log('Registered events at scope: ', registration.scope);
-                });
-        }
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'UA-114909353-1');
-    </script>
 </head>
 <body class="nk-body npc-invest bg-lighter ">
 <!-- wrap @s -->
@@ -308,7 +289,7 @@
                                 如手机套餐内含头条系，阿里系，百度系等定向流量，填写免流量的资源URL，即可直接消耗免费的定向流量</p>
                             <p>如果是要消耗机场流量,建议使用海外节点,速度可能会更快</p>
                             <p>注：虽支持可自定义下载地址 但无法请求跨域链接</p>
-                            <img src="https://ip.vv1234.cn/ipx/" alt="">
+                            <img src="https://api.azpay.cn/814/2.php" alt="">
                             <hr>
                             <a class="nk-menu-link nk-ibx-action-item" href="old-index.html">→ 点我切换回旧版 ←</a>
                         </div>
@@ -467,20 +448,6 @@
             }
         },
     })
-</script>
-
-<script>document.oncontextmenu = function (event) {
-    if (window.event) {
-        event = window.event;
-    }
-    try {
-        let the = event.srcElement;
-        return (the.tagName === "INPUT" && the.type.toLowerCase() === "text") || the.tagName === "TEXTAREA";
-
-    } catch (e) {
-        return false;
-    }
-}
 </script>
 </body>
 </html>
